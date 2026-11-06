@@ -34,7 +34,7 @@ jobs:
         # polaris_container_name: 'unique-container-name' # use for filtering
 
         ### SCANNING: Optional fields
-        polaris_application_name: ${{ github.event.repository.name }}
+        polaris_application_name: "Vernes Interview"
         polaris_project_name: ${{ github.event.repository.name }}
 
         ### PULL REQUEST COMMENTS: Uncomment below to enable
