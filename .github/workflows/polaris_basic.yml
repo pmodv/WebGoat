@@ -24,15 +24,6 @@ jobs:
         polaris_access_token: ${{ secrets.POLARIS_ACCESS_TOKEN }}
         polaris_assessment_types: "SCA,SAST"
 
-        ### Binary scan: requires polaris_assessment_types set to SCA only
-        # polaris_test_sca_type: "SCA-BINARY"
-        # polaris_artifactToUpload: "/path/to/binary-file"
-
-        ### SCA container scan: requires polaris_assessment_types set to SCA only
-        # polaris_test_sca_type: 'SCA-CONTAINER'
-        # polaris_artifactToUpload: '/path/to/container.tar.gz'
-        # polaris_container_name: 'unique-container-name' # use for filtering
-
         ### SCANNING: Optional fields
         polaris_application_name: "Vernes Interview"
         polaris_project_name: ${{ github.event.repository.name }}
